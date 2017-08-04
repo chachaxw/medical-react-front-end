@@ -1,0 +1,52 @@
+.TheListedDrugsContent {
+
+    .downimg {
+        position: absolute;
+        bottom: -36px;
+        left: 50%;
+        margin-left: -16px;
+    }
+
+    .xh-list-row-a > p {
+        position: relative;
+    }
+
+    .xh-content-list-wrap .xh-content-list-heard span {
+        text-align: left;
+    }
+
+    .cursor {
+        cursor: pointer;
+    }
+
+}
+
+.ant-table-body {
+    th {
+        text-align: left;
+        padding-left:8px;
+        padding-right:8px;
+    }
+    td {
+        text-align: left;
+    }
+}
+
+.spancenter {
+    text-align: center!important;
+    display: block;
+    width:100%;
+    cursor: pointer;
+}
+.spancenter-l {
+    text-align: center!important;
+}
+
+.xh-proportion p{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.xh-proportion p span{
+    width:100%!important;
+}

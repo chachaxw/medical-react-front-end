@@ -1,0 +1,2256 @@
+/*自定义样式*/
+*{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+html,body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+    margin: 0;
+    padding: 0;
+}
+html,body,.xh-wrap{
+	width: 100%;
+	height: 100%;
+}
+body{
+	font-family:poppin,'PingFang SC',Tahoma,Arial,\5FAE\8F6F\96C5\9ED1,sans-serif;
+	font-size:12px;
+	background:#fff;
+	min-width: 1280px;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight: normal;
+}
+a{
+	text-decoration:none;
+	outline:none;
+	hide-focus: expression( this.hideFocus=true );
+}
+a:focus{
+	outline:none;
+}
+input,button,select{
+	font-family:poppin,'PingFang SC',Tahoma,Arial,\5FAE\8F6F\96C5\9ED1,sans-serif;
+	outline: none;
+}
+input::-ms-clear{
+	display:none;
+}
+ul,li{
+	list-style:none;
+}
+img,a{
+	border:0 none;
+}
+b{
+	font-weight: 400;
+}
+/*定位*/
+.xh-relative{
+	position: relative;
+}
+/*浮动与清除浮动*/
+.xh-fl{
+	float: left;
+}
+.xh-fr{
+	float: right;
+}
+.xh-clearfix:after{
+	content:'.';
+	display:block;
+	clear:both;
+	height:0;
+	visibility:hidden;
+}
+/*百分比*/
+.xh-width-1-1{
+	width: 100% !important;
+}
+.xh-width-3-1{
+	width: 33.333% !important;
+}
+/*文字位置*/
+.xh-text-left{
+	text-align: left !important;
+}
+.xh-text-center{
+	text-align: center !important;
+}
+/*边距*/
+.xh-pl-12{
+	padding-left: 12px !important;
+}
+/*颜色*/
+.xh-blue{
+	color: #459fed !important;
+}
+.xh-color-b6{
+	color: #b6b6b6 !important;
+}
+.xh-color-999{
+	color: #999 !important;
+}
+.xh-color-red{
+	color: #ec1414 !important;
+}
+
+/*内容部分*/
+.xh-container{
+	position: relative;
+	min-height: 100%;
+}
+/*侧边栏*/
+
+.xh-container-left-inner{
+	min-height: 100%;
+	border-right: 1px solid #f5f6f6;
+}
+.xh-container-left .xh-sidebar-top{
+	height: 62px;
+	text-align: right;
+}
+.xh-sidebar-arrow a{
+	display: inline-block;
+	width: 46px;
+	height: 46px;
+	text-align: center;
+	padding: 13px 0;
+}
+.xh-sidebar-arrow a.xh-sidebar-hide{
+	margin: 18px 22px 0 0;
+}
+/*显示侧边栏按钮 start*/
+.xh-sidebar-arrow a.xh-sidebar-show{
+	position: fixed;
+	top: 92px;
+	left: 0;
+	background: #459fed;
+	display: none;
+}
+.xh-sidebar-arrow a.xh-sidebar-show:hover{
+	background: #3e9aea;
+}
+/*显示侧边栏按钮 end*/
+.xh-sidebar-wrap li.xh-sidebar-list{
+	border-bottom: 1px solid #f5f6f6;
+	margin: 0 22px;
+	padding: 16px 0;
+}
+.xh-sidebar-wrap li.xh-sidebar-list .xh-sidebar-list-a{
+	position: relative;
+	display: block;
+	font-size: 16px;
+	color: #000;
+	padding-left: 28px;
+}
+.xh-sidebar-wrap li.xh-sidebar-list .xh-sidebar-list-a:after{
+	position: absolute;
+	top: 6px;
+	left: 10px;
+	content: '';
+	background: url(../img/sidebar_arrow.png) no-repeat;
+	width: 10px;
+	height: 10px;
+}
+.xh-sidebar-wrap li.xh-sidebar-list.active{
+	padding-bottom: 0;
+}
+.xh-sidebar-wrap li.xh-sidebar-list.active .xh-sidebar-list-a{
+	color: #459fed;
+}
+.xh-sidebar-wrap li.xh-sidebar-list.active .xh-sidebar-list-a:after{
+	background-position: 0 -10px;
+}
+.xh-sidebar-wrap li.xh-sidebar-list-2 a{
+	position: relative;
+	display: block;
+	color: #797979;
+	font-size: 16px;
+	padding: 6px 0 6px 28px;
+}
+.xh-sidebar-wrap li.xh-sidebar-list-2 a:after{
+	position: absolute;
+	top: 14px;
+	left: 12px;
+	content: '';
+	width: 7px;
+	height: 7px;
+	background: url(../img/add_and_subtract.png) no-repeat;
+}
+.xh-sidebar-wrap li.xh-sidebar-list-2.active a:after{
+	background-position: 0 -7px;
+}
+.xh-sidebar-list-wrap{
+	margin-top: 16px;
+	padding: 16px 0;
+	border-top: 1px solid #f5f6f6;
+}
+.xh-sidebar-checkbox-each{
+	font-size: 14px;
+	color: #999;
+	padding: 4px 0 4px 28px;
+}
+/*复选框*/
+.xh-sidebar-checkbox-wrap{
+	padding-left:20px;
+}
+.xh-regular-checkbox{
+	display: none;
+}
+.xh-regular-checkbox + label{
+	background: url(../img/checkbox_n.png) no-repeat;
+}
+.xh-regular-checkbox:checked + label{
+	background: url(../img/checkbox_s.png) no-repeat;
+}
+.xh-big-checkbox + label{
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	margin-bottom: -1px;
+}
+/*条件筛选状态*/
+.xh-checkbox-state{
+	position: absolute;
+	top: 11px;
+	left: -5px;
+}
+/*关键词查询*/
+.xh-sidebar-query-criteria{
+	margin-top: 16px;
+}
+
+.xh-sidebar-query-criteria ul li{
+	position: relative;
+}
+.xh-sidebar-query-criteria ul li input{
+	height: 46px;
+	line-height: 46px;
+	font-size: 14px;
+	color: #666;
+	border: none;
+	border-bottom: 1px solid #f5f6f6;
+	padding-left: 26px;
+}
+.xh-sidebar-query-criteria ul li i.xh-side-search-icon{
+	position: absolute;
+	top: 17px;
+	left: 6px;
+	width: 12px;
+	height: 12px;
+	background: url(../img/side_seach.png) no-repeat;
+}
+.xh-side-search-btn a{
+	display: block;
+	width: 140px;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	font-size: 16px;
+	color: #fff;
+	background: #459fed;
+	border-radius: 2px;
+	margin: 18px auto;
+}
+.xh-side-search-btn a:hover{
+	background: #3a94e2;
+}
+/*一键搜索*/
+.xh-side-key-search{
+	border-top: 1px solid #f5f6f6;
+	margin: 16px 0;
+	padding-top: 16px;
+}
+.xh-side-key-search span,.xh-side-key-search a{
+	display: block;
+	padding: 4px 0 4px 44px;
+}
+.xh-side-key-search span{
+	font-size: 14px;
+	color: #797979;
+}
+.xh-side-key-search span.xh-side-key-search-checkbox{
+	padding: 0;
+}
+.xh-side-key-search a{
+	font-size: 14px;
+	color: #459fed;
+}
+.xh-side-key-search a:hover{
+	text-decoration: underline;
+}
+/*我的筛选*/
+.xh-side-myscreening span{
+	position: relative;
+	padding-left: 26px;
+	cursor: pointer;
+}
+.xh-side-myscreening span:after{
+	position: absolute;
+	top: 8px;
+	content: '';
+	width: 12px;
+	height: 12px;
+	background: url(../img/del.png) no-repeat;
+	margin-left: 6px;
+}
+/*药品详情页侧边栏*/
+.xh-sidebar-drug-details{
+	margin: 0 28px;
+}
+.xh-sidebar-drug-details h2{
+	font-size: 18px;
+	font-weight: bold;
+	padding: 12px 0 12px 12px;
+	border-bottom: 1px solid #e8e9eb;
+}
+.xh-sidebar-drug-details ul li a{
+	display: block;
+    font-size: 16px;
+    color: #666;
+    padding: 12px 0px 12px 18px;
+    margin: 6px 0;
+}
+.xh-sidebar-drug-details ul li a:hover,.xh-sidebar-drug-details ul li a.active{
+	color: #fff;
+	background: #459fed;
+}
+/*右侧部分*/
+.xh-container-right{
+	padding: 0 38px 38px 259px;
+}
+.xh-screen-wrap{
+	padding: 22px 0;
+}
+.xh-screen-wrap-2{
+	padding: 0 0 38px;
+}
+
+/*按钮*/
+.xh-btn{
+	height: 34px;
+	line-height: 34px;
+	color: #333;
+	border: 1px solid #c9c9c9;
+	border-radius: 2px;
+	padding: 0 28px;
+}
+.xh-btn:hover{
+	background: #ededed;
+}
+.xh-data-more{
+    display: block;
+    font-size: 16px;
+    color: #666;
+    width: 142px;
+    height: 44px;
+    line-height: 44px;
+    border: 1px solid #c9c9c9;
+    border-radius: 2px;
+    text-align: center;
+    padding: 0;
+    margin: 12px auto;
+}
+.xh-screen-left .xh-screen-btn-wrap li{
+	position: relative;
+	height: 34px;
+	line-height: 34px;
+	font-size: 14px;
+	color: #333;
+	border: 1px solid #c9c9c9;
+	border-radius: 2px;
+	padding: 0 28px 0 12px;
+	margin-right: 8px;
+	cursor: pointer;
+}
+.xh-screen-left .xh-screen-btn-wrap li:after{
+	position: absolute;
+	top: 7px;
+	right: 2px;
+	content: '';
+	width: 8px;
+	height: 8px;
+	background: url(../img/close_n.png) center no-repeat;
+	padding: 6px;
+}
+.xh-screen-left .xh-screen-btn-wrap li:hover:after{
+	background: url(../img/close_s.png) center no-repeat;
+}
+/*模拟美化select表单部分*/
+.xh-select-wrap{
+	font-size: 14px;
+	color: #333;
+	position: relative;
+}
+.xh-select{
+	width: 138px;
+	height: 34px;
+	line-height: 34px;
+	background: #fff url(../img/select.png) 116px 15px no-repeat;
+	border: 1px solid #c9c9c9;
+	border-radius: 2px;
+	padding: 0 14px 0 12px;
+	margin-right: 8px;
+	overflow: hidden;
+	cursor:pointer;
+}
+.xh-select-wrap ul{
+	width: 138px;
+	background: #fff;
+	border: 1px solid #c9c9c9;
+	display: none;
+	position: absolute;
+	top: 33px;
+	left: 0;
+	z-index: 999;
+}
+
+.xh-select-wrap ul li{
+	height: 30px;
+	line-height: 30px;
+	padding-left: 12px;
+	cursor: pointer;
+}
+
+.xh-select-wrap .xh-box-s-act {
+	display: block;
+}
+
+.xh-select-wrap ul li:hover{
+	background: #f7f7f7;
+}
+/*列表部分*/
+.xh-content-list-wrap .xh-content-list-heard{
+	color: #b6b6b6;
+	border-bottom: 1px solid #e8e9eb;
+	padding: 0 0 12px 0;
+}
+.xh-content-list-wrap .xh-content-list-heard span{
+	display: inline-block;
+	font-size: 16px;
+	text-align: center;
+	padding: 0 8px;
+}
+.xh-content-list-wrap .xh-content-list-cont li{
+	color: #666;
+	border-bottom: 1px solid #e8e9eb;
+}
+.xh-content-list-wrap .xh-content-list-cont li span{
+	font-size: 16px;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	line-height: 26px;
+	padding: 0 8px;
+}
+.xh-content-list-wrap .xh-content-list-cont li span.active{
+	position: relative;
+}
+.xh-content-list-wrap .xh-content-list-cont li span.active:after{
+	position: absolute;
+	top: 198%;
+	left: 50%;
+	content: '';
+	width: 16px;
+	height: 9px;
+	background: url(../img/list_bottom.png) no-repeat;
+	-o-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}
+/*展开部分*/
+.xh-content-list-wrap .xh-content-list-cont li.xh-proportion-open-style{
+	padding-bottom: 0;
+	border-bottom: none;
+}
+.xh-content-list-wrap .xh-content-list-cont li .xh-proportion-open{
+	border-top: 1px solid #459fed;
+	border-bottom: 1px solid #459fed;
+	display: none;
+}
+.xh-content-list-wrap .xh-content-list-cont li .xh-proportion-open li:last-child{
+	border-bottom: 1px solid #459fed;
+}
+/*中国上市药品页-按药品名称浏览 start*/
+.xh-china-drugs-browse .xh-proportion span:first-child{
+	width: 20%;
+}
+.xh-china-drugs-browse .xh-proportion span:nth-child(2){
+	width: 50%;
+}
+.xh-china-drugs-browse .xh-proportion span:nth-child(n+3){
+	width: 10%;
+}
+.xh-china-drugs-browse .xh-content-list-cont li span:nth-child(3){
+	cursor: pointer;
+}
+.xh-china-drugs-browse .xh-content-list-cont li .xh-proportion-open li span:nth-child(3){
+	cursor: auto;
+}
+.xh-china-drugs-browse .xh-proportion span:first-child{
+	text-align: left;
+}
+/*展开部分*/
+.xh-china-drugs-browse .xh-content-list-cont li .xh-proportion-open li span:nth-child(2){
+	text-align: left;
+	width: 26%
+}
+.xh-china-drugs-browse .xh-content-list-cont li .xh-proportion-open li span:nth-child(n+3){
+	text-align: right;
+	width: 18%;
+}
+/*中国上市药品页-按药品名称浏览 end*/
+/*上市药品页列表 start*/
+.xh-lsted-drug-page .xh-proportion span{
+	width: 20%;
+}
+.xh-lsted-drug-page .xh-proportion span.xh-down-arrow{
+	position: relative;
+}
+
+.xh-lsted-drug-page .xh-proportion span.xh-up-arrow{
+	position: relative;
+}
+
+.xh-lsted-drug-page .xh-proportion span.xh-down-arrow:after{
+	position: absolute;
+	top: 4px;
+	content: '';
+	width: 8px;
+	height: 15px;
+	background: url(../img/down_arrow.png) no-repeat;
+	margin-left: 6px;
+}
+
+.xh-lsted-drug-page .xh-proportion span.xh-up-arrow:after{
+	position: absolute;
+	top: 4px;
+	content: '';
+	width: 8px;
+	height: 15px;
+	background: url(../img/down_arrow.png) no-repeat;
+	margin-left: 6px;
+	transform:rotate(180deg);
+}
+.xh-lsted-drug-page .xh-proportion span:nth-child(-n+2){
+	text-align: left;
+}
+/*.xh-lsted-drug-page .xh-proportion span:nth-child(2){*/
+	/*padding-left: 20px;*/
+/*}*/
+/*上市药品页列表 end*/
+/*中国上市药品页-按企业名称浏览 start*/
+.xh-enterprise-browsing .xh-proportion span:first-child{
+	width: 48%;
+}
+.xh-enterprise-browsing .xh-proportion span:nth-child(2),.xh-enterprise-browsing .xh-proportion span:nth-child(n+3){
+	width: 13%;
+}
+.xh-enterprise-browsing .xh-content-list-cont li span:nth-child(2){
+	cursor: pointer;
+}
+.xh-enterprise-browsing .xh-content-list-cont .xh-proportion-open li span:nth-child(2){
+	cursor: auto;
+}
+.xh-enterprise-browsing .xh-content-list-cont li span.active:after{
+	top: 148%;
+}
+.xh-enterprise-browsing .xh-proportion span:first-child{
+	text-align: left;
+}
+/* 展开部分 */
+.xh-enterprise-browsing .xh-proportion .xh-proportion-open li span:first-child{
+	width: 20%;
+}
+.xh-enterprise-browsing .xh-content-list-cont li .xh-proportion-open li span:nth-child(2){
+	text-align: left;
+	width: 26%
+}
+.xh-enterprise-browsing .xh-content-list-cont li .xh-proportion-open li span:nth-child(n+3){
+	text-align: right;
+	width: 18%;
+}
+/*中国上市药品页-按企业名称浏览 end*/
+/*药品详情页侧 start*/
+.xh-container-drug-details .xh-screen-wrap{
+	padding-top: 30px;
+}
+.xh-container-drug-details h1.xh-details-tit{
+	font-size: 24px;
+	margin-right: 20px;
+}
+.xh-container-drug-details p.xh-details-note{
+	font-size: 18px;
+	color: #999;
+	margin: 16px 0;
+}
+.xh-container-drug-details .xh-details-show-each{
+	margin-bottom: 48px;
+}
+.xh-container-drug-details .xh-details-show-each h4{
+	font-size: 18px;
+	border-bottom: 1px solid #e8e9eb;
+	padding-bottom: 8px;
+}
+.xh-container-drug-details .xh-details-show-each h4 a{
+	position: absolute;
+	top: 6px;
+	right: 2px;
+	font-size: 14px;
+	color: #459fed;
+}
+.xh-container-drug-details .xh-details-show-each h4 a:hover{
+	text-decoration: underline;
+}
+.xh-container-drug-details .xh-details-show-each .xh-details-key ul li{
+	float: left;
+	font-size: 16px;
+	color: #666;
+	padding: 16px 42px 0 0;
+}
+.xh-container-drug-details .xh-details-show-each .xh-details-key ul li.xh-details-key-li a:hover{
+	text-decoration: underline;
+}
+/*弹框 start*/
+.xh-details-key-li-bomb-box{
+	position: absolute;
+	top: 48px;
+	left: 0px;
+	width: 100%;
+	background: #fff;
+	box-shadow: 0 1px 6px rgba(0,0,0,.3);
+	z-index: 999;
+	display: none;
+}
+ .xh-details-key-li-bomb-box:after{
+    position: absolute;
+    content: '';
+    width: 26px;
+    height: 13px;
+    background: url(../img/bomb_box_arrow.png) no-repeat;
+    top: -12px;
+    left: 20px;
+}
+.xh-details-key-li-bomb-box-nth-2:after{
+	left: 180px;
+}
+.xh-details-key-li-bomb-box i{
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	width: 12px;
+	height: 12px;
+	background: url(../img/bomb-box-close.png) no-repeat;
+	cursor: pointer;
+}
+.xh-details-key-li-bomb-box table{
+	padding: 22px 26px;
+}
+.xh-details-key-li-bomb-box table th,.xh-details-key-li-bomb-box table td{
+	font-size: 16px;
+	font-weight: 400;
+	text-align: center;
+}
+.xh-details-key-li-bomb-box table th{
+	color: #b6b6b6;
+	border-bottom: 1px solid #e8e9eb;
+	padding-bottom: 12px;
+}
+.xh-details-key-li-bomb-box table td{
+	color: #666;
+	padding-top: 12px;
+}
+.xh-details-key-a-bomb-box{
+	top: 34px;
+	left: -98px;
+	width: 340px;
+}
+.xh-details-key-a-bomb-box dl{
+	padding-left: 12px;
+}
+.xh-details-key-a-bomb-box dl:last-child{
+	padding-bottom: 14px;
+}
+.xh-details-key-a-bomb-box:after{
+	left: 124px;
+}
+/*弹框 end*/
+.xh-container-drug-details .xh-details-show-each .xh-details-key .xh-details-dl{
+	float: left;
+	width: 50%;
+}
+.xh-container-drug-details .xh-details-show-each .xh-details-key dl dt,.xh-container-drug-details .xh-details-show-each .xh-details-key dl dd{
+	display: inline-block;
+	font-size: 16px;
+	color: #666;
+	padding-top: 14px;
+}
+.xh-container-drug-details .xh-details-show-each .xh-details-key dl dd a{
+	color: #459fed;
+	margin-left: 6px;
+}
+.xh-container-drug-details .xh-details-show-each .xh-details-key dl dd a:hover{
+	text-decoration: underline;
+}
+.xh-container-drug-details .xh-details-show-each .xh-details-key p{
+	font-size: 16px;
+	color: #666;
+	padding-top: 14px;
+}
+.xh-container-drug-details .xh-details-show-each .xh-details-key .xh-bid-data-table{
+	font-size: 16px;
+}
+.xh-container-drug-details .xh-details-show-each .xh-details-key .xh-bid-data-table th{
+	font-weight: 400;
+	color: #b6b6b6;
+	padding-top: 14px;
+}
+.xh-container-drug-details .xh-details-show-each .xh-details-key .xh-bid-data-table th:first-child{
+	text-align: left;
+}
+.xh-container-drug-details .xh-details-show-each .xh-details-key .xh-bid-data-table td{
+	color: #666;
+	padding-top: 14px;
+}
+.xh-container-drug-details .xh-details-show-each .xh-details-key .xh-bid-data-table td:not(:first-child){
+	text-align: center;
+}
+.xh-container-drug-details .xh-details-show-each .xh-details-key .xh-bid-data-table.xh-bid-data-table-9-1 th,.xh-container-drug-details .xh-details-show-each .xh-details-key .xh-bid-data-table.xh-bid-data-table-9-1 td{
+	width: 11.111%;
+}
+/*药品详情页侧 end*/
+/*美国上市药品页-按药品名称浏览 start*/
+.xh-usa-lsted-drug-page .xh-proportion span{
+	width: 14.222%;
+}
+.xh-usa-lsted-drug-page .xh-proportion span:first-child{
+	text-align: left;
+}
+.xh-usa-drugs-browse .xh-proportion span:first-child,.xh-eu-enterprise-browse .xh-proportion span:first-child{
+	width: 55%;
+	text-align: left;
+}
+.xh-usa-drugs-browse .xh-proportion span:not(:first-child),.xh-eu-enterprise-browse .xh-proportion span:not(:first-child){
+	width: 15%;
+}
+.xh-usa-drugs-browse .xh-content-list-cont .xh-proportion span:nth-child(3),.xh-eu-enterprise-browse .xh-content-list-cont .xh-proportion span:nth-child(3){
+	cursor: pointer;
+}
+.xh-usa-drugs-browse .xh-content-list-cont .xh-proportion .xh-proportion-open li span:nth-child(3),.xh-eu-enterprise-browse .xh-content-list-cont .xh-proportion .xh-proportion-open li span:nth-child(3){
+	cursor: auto;
+}
+.xh-usa-drugs-browse .xh-content-list-cont li span.active:after,.xh-eu-enterprise-browse .xh-content-list-cont li span.active:after{
+	top: 148%;
+}
+.xh-usa-drugs-browse .xh-proportion .xh-proportion-open li span{
+	width: 14.222%;
+}
+.xh-approve-historye-moudle .xh-proportion{
+	border-bottom: none !important;
+}
+.xh-approve-historye-moudle .xh-approve-historye-list-h{
+	padding: 14px 0 36px 0 !important;
+}
+.xh-approve-historye-moudle .xh-approve-historye-list-h span{
+	vertical-align: middle;
+}
+.xh-approve-historye-moudle p{
+	font-size: 16px;
+	color: #666;
+}
+.xh-approve-historye-moudle .xh-proportion span{
+	width: 20%;
+}
+.xh-approve-historye-moudle .xh-proportion span:nth-child(-n+2),.xh-approve-historye-moudle .xh-proportion span:nth-child(4){
+	text-align: left;
+}
+/*美国上市药品页-按药品名称浏览 end*/
+/*欧盟上市药品页-按药品名称浏览 start*/
+.xh-european_union-lsted-drug-page .xh-proportion span{
+	width: 20%;
+}
+.xh-european_union-lsted-drug-page .xh-proportion span:first-child{
+	text-align: left;
+}
+.xh-eu-drugs-browse .xh-content-list-cont li span.active:after{
+	top: 148%;
+}
+.xh-eu-drugs-browse .xh-content-list-cont li span:first-child{
+	width: 85%;
+}
+.xh-eu-drugs-browse .xh-content-list-cont li span:nth-child(2){
+	cursor: pointer;
+}
+.xh-eu-drugs-browse .xh-content-list-cont li .xh-proportion-open span:nth-child(2){
+	cursor: auto;
+}
+.xh-eu-drugs-browse .xh-proportion span:first-child{
+	width: 85%;
+	text-align: left;
+}
+.xh-eu-drugs-browse .xh-proportion span:nth-child(2){
+	width: 15%;
+}
+.xh-eu-drugs-browse .xh-content-list-cont li .xh-proportion-open span:nth-child(-n+4),.xh-eu-enterprise-browse .xh-content-list-cont li .xh-proportion-open span:nth-child(-n+4){
+	width: 21.25%
+}
+.xh-eu-drugs-browse .xh-content-list-cont li .xh-proportion-open span:last-child,.xh-eu-enterprise-browse .xh-content-list-cont li .xh-proportion-open span:last-child{
+	width: 15%;
+}
+/*欧盟上市药品页-按药品名称浏览 end*/
+/*首页 start*/
+.xh-index-header{
+	position: relative;
+	height: 100%;
+	overflow: hidden;
+}
+
+
+/*首页轮播*/
+.xh-carousel-wrap{
+	width: 1140px;
+	height: 580px;
+	margin: 0 auto;
+}
+.xh-carousel-wrap .xh-carousel-cont{
+	overflow: hidden;
+}
+.xh-carousel-wrap .xh-carousel-cont,.xh-carousel-wrap .xh-carousel-cont .xh-carousel-each{
+	height: 492px;
+}
+.xh-carousel-wrap .xh-carousel-cont .xh-carousel-each .xh-carousel-text,.xh-carousel-wrap .xh-carousel-cont .xh-carousel-each .xh-carousel-img{
+	width: 50%;
+}
+.xh-carousel-wrap .xh-carousel-cont .xh-carousel-each .xh-carousel-img{
+	margin-top: 52px;
+	text-align: right;
+}
+.xh-carousel-wrap .xh-carousel-cont .xh-carousel-each .xh-carousel-text{
+	padding-right: 152px;
+	margin-top: 162px;
+}
+.xh-carousel-wrap .xh-carousel-cont .xh-carousel-each .xh-carousel-text h2{
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+.xh-carousel-wrap .xh-carousel-cont .xh-carousel-each .xh-carousel-text p{
+	font-size: 16px;
+	color: #333;
+	text-align: justify;
+	line-height: 38px;
+}
+.xh-carousel-wrap .xh-carousel-cont .xh-carousel-each .xh-carousel-text p a{
+	color: #459fed;
+	margin-left: 172px;
+}
+.xh-carousel-wrap .xh-carousel-cont .xh-carousel-each .xh-carousel-text p a:hover{
+	text-decoration: underline;
+}
+/*轮播按钮*/
+.xh-carousel-wrap .xh-carousel-btns{
+	position: absolute;
+	left: 538px;
+	bottom: 12px;
+}
+.xh-carousel-wrap .xh-carousel-btns span{
+	display: inline-block;
+	width: 9px;
+	height: 9px;
+	background: #b0b0b0;
+	border-radius: 50%;
+	margin: 0 2px;
+}
+.xh-carousel-wrap .xh-carousel-btns span.on{
+	background: #459fed;
+}
+/*页脚*/
+.xh-index-footer{
+	background: #262626;
+	margin-top: 98px;
+	text-align: center;
+	font-size: 14px;
+	color: #8c8c8c;
+	padding: 50px 0 40px 0;
+}
+.xh-index-footer ul li{
+	display: inline-block;
+}
+.xh-index-footer ul li a{
+	color: #8c8c8c;
+	border-right: 1px solid #8c8c8c;
+	padding: 0 12px;
+}
+.xh-index-footer ul li a:hover{
+	text-decoration: underline;
+}
+.xh-index-footer p{
+	margin-bottom: 24px;
+}
+/*基本情况*/
+.xh-basic_situation .xh-proportion span:first-child{
+	width: 64%;
+	text-align: left;
+}
+.xh-basic_situation .xh-proportion span:nth-child(2){
+	text-align: left;
+	padding-left: 28px;
+}
+.xh-basic_situation .xh-proportion span:nth-child(n+2){
+	width: 18%;
+}
+.xh-basic_situation .xh-proportion span:last-child{
+	margin-top: -50px;
+}
+.xh-basic_situation .xh-proportion p.xh-proportion-p{
+	margin-bottom: 6px;
+}
+.xh-basic_situation .xh-proportion b.xh-proportion-b{
+	font-size: 14px;
+	line-height: normal;
+}
+.xh-basic_situation .xh-proportion p.xh-list-p{
+	color: #999;
+}
+.xh-container-drug-details .xh-details-show-each .xh-details-key p.xh-introduce-p{
+	font-size: 14px;
+	line-height: 28px;
+	text-indent: 38px;
+}
+.xh-structure-wrap{
+	position: absolute;
+	top: 58px;
+	right: 0;
+	width: 105px;
+	text-align: center;
+}
+.xh-container-drug-details .xh-details-show-each .xh-details-key .xh-structure-wrap p{
+	font-size: 14px;
+	padding-top: 6px;
+}
+.xh-china-listing-table tr th:last-child,.xh-china-listing-table tr td:last-child{
+	width: 120px;
+}
+.xh-ea-listing-table tr th:nth-child(-n+2),.xh-ea-listing-table tr td:nth-child(-n+2){
+	width: 23%;
+}
+.xh-details-h4-position{
+	position: absolute;
+	top: 6px;
+	right: 2px;
+}
+.xh-details-h4-position span,.xh-details-h4-position a.xh-details-h4-position-a{
+	font-size: 14px;
+	color: #666;
+	padding-left: 12px;
+}
+.xh-details-h4-position a.xh-details-h4-position-a{
+	position: static !important;
+}
+.xh-statistical_chart{
+	text-align: center;
+	margin-top: 52px;
+}
+.xh-statistical_chart-w,.xh-statistical_chart-text{
+	display: inline-block;
+	font-size: 14px;
+	color: #666;
+	margin-left: 36px;
+}
+/*首页 end*/
+/*追踪监测系统 start*/
+.xh-sidebar-wrap a:hover {
+	text-decoration: none;
+}
+
+.xh-sidebar-wrap .xh-sidebar-track-a{
+	padding-bottom: 12px;
+}
+.xh-sidebar-wrap .xh-sidebar-track-ul{
+	display: none;
+}
+.xh-sidebar-wrap .xh-sidebar-track-ul li a{
+	display: block;
+	font-size: 16px;
+	color: #666;
+	padding: 12px 0 12px 18px;
+	margin: 6px 0;
+}
+.xh-sidebar-wrap .xh-sidebar-track-ul li a:hover,.xh-sidebar-wrap .xh-sidebar-track-ul li a.active{
+	color: #fff;
+	background: #459fed;
+}
+.xh-select-small{
+	width: 102px;
+	background-position: 80px 15px;
+}
+.xh-select-wrap-small ul{
+	width: 102px;
+}
+.xh-country-group{
+	height: 34px;
+	line-height: 34px;
+	font-size: 14px;
+	color: #666;
+}
+.xh-country-group span{
+	margin-left: 12px;
+}
+.xh-time-wrap{
+	text-align: center;
+	margin:60px 0 36px 0;
+}
+.xh-time-wrap h2{
+	font-size: 48px;
+	color: #459fed;
+	margin-bottom: 10px;
+}
+.xh-time-wrap p{
+	font-size: 36px;
+	color: #999;
+}
+.xh-absolute-new{
+	position: relative;
+}
+.xh-absolute-new:after{
+	position: absolute;
+	top: -8px;
+	right: 10px;
+	content: '';
+	width: 28px;
+	height: 12px;
+	background: url(../img/new.png) no-repeat;
+}
+/*日本新药*/
+.xh-new-drug-6-1 .xh-proportion span{
+	width:16.666%
+}
+.xh-new-drug-4-1 .xh-proportion span{
+	width:25%
+}
+.xh-japan-new_drug span:first-child{
+	text-align: left !important;
+}
+.xh-japan-new_drug span:last-child,.xh-usa-new_drug span:last-child{
+	text-align: right !important;
+}
+.xh-proportion-tit-wrap .xh-proportion span{
+	width: 15%;
+}
+.xh-proportion-tit-wrap .xh-proportion span:first-child{
+	width: 40%;
+}
+.xh-drug-newtit .xh-proportion span{
+	width: 15%;
+}
+.xh-drug-newtit .xh-proportion span:nth-child(-n+2){
+	text-align: left;
+}
+.xh-drug-newtit .xh-proportion span:first-child{
+	width: 70%;
+}
+.xh-drug-tracking .xh-proportion span{
+	font-size: 14px !important;
+}
+.xh-drug-tracking .xh-proportion span:first-of-type{
+	position: relative;
+}
+.xh-drug-tracking .xh-proportion span:first-of-type:after{
+	position: absolute;
+	top: 10px;
+	right: 0;
+	content: '';
+	width: 1px;
+	height: 12px;
+	background: #999;
+}
+.xh-drug-tracking .xh-proportion p,.xh-drug-tracking .xh-proportion span{
+	padding: 3px 8px !important;
+}
+.xh-drug-tracking .xh-proportion p{
+	font-size: 16px;
+	padding-bottom: 6px !important;
+}
+.xh-drug-tracking ul.xh-content-list-cont{
+	border-bottom: 1px solid #e8e9eb;
+	padding: 18px 0;
+}
+.xh-drug-tracking ul.xh-content-list-cont:first-child{
+	border-top: 1px solid #e8e9eb;
+}
+.xh-drug-tracking .xh-content-list-cont li{
+	border: none;
+	padding: 0;
+}
+/*订阅地区*/
+.xh-subscription-area{
+	font-size: 16px;
+	color: #666;
+}
+.xh-subscribed ul li{
+	float: left;
+	margin-right: 20px;
+}
+.xh-subscription-area span{
+	margin-right: 30px;
+}
+.xh-subscription-area .xh-subscribed,.xh-subscription-area .xh-not-subscribed{
+	margin-bottom: 28px;
+}
+.xh-subscription-area .xh-not-subscribed span.xh-not-subscribed-span{
+	display: inline-block;
+	position: relative;
+}
+.xh-subscription-area .xh-not-subscribed span.xh-not-subscribed-span:after{
+	position: absolute;
+	top: 9px;
+	right: -14px;
+	content: '';
+	width: 9px;
+	height: 10px;
+	background: url(../img/arrow_down.png) no-repeat;
+}
+.xh-subscribed-table .xh-proportion span{
+	width: 10%;
+}
+.xh-subscribed-table .xh-proportion span:first-child{
+	text-align: left;
+}
+.xh-subscribed-table .xh-proportion span:nth-child(2){
+	width: 35%;
+}
+.xh-subscribed-table .xh-content-list-heard span:last-child{
+	text-align: center !important;
+}
+/*追踪监测系统 end*/
+/*统计图表 start*/
+.xh-chart-wrap{
+	text-align: center;
+	padding: 68px 0;
+}
+.xh-chart-wrap:not(:last-child){
+	border-bottom: 1px solid #f5f6f6;
+}
+.xh-chart-inner{
+	position: relative;
+	display: inline-block;
+}
+.xh-chart-left{
+	position: relative;
+	width: 160px;
+	min-height: 166px;
+	margin-right: 68px;
+}
+.xh-chart-left-1{
+	height: 482px;
+}
+.xh-chart-left-2{
+	height: 666px;
+}
+.xh-chart-left-3{
+	height: 430px;
+}
+.xh-chart-left-4{
+	height: 488px;
+}
+.xh-chart-left-5{
+	height: 558px;
+}
+.xh-chart-left-inner{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.xh-chart-left-each{
+	font-size: 16px;
+	color: #666;
+	text-align: left;
+	margin-top: 20px;
+}
+.xh-chart-left-each p{
+	margin-bottom: 8px;
+}
+.xh-chart-time-ipt input{
+	width: 156px;
+	height: 34px;
+	border: 1px solid #c9c9c9;
+	padding-left: 8px;
+}
+.xh-chart-time-ipt i{
+	content: '';
+	position: absolute;
+	top: 7px;
+	right: 8px;
+	width: 20px;
+	height: 20px;
+	background: url(../img/data_icon.png) center no-repeat;
+	cursor: pointer;
+}
+.xh-chart-left-each ul li a{
+	display: block;
+	width: 78px;
+	height: 34px;
+	line-height: 34px;
+	text-align: center;
+	font-size: 16px;
+	color: #666;
+	border: 1px solid #d6d6d6;
+}
+.xh-chart-left-each ul li:first-child a{
+	border-right: none;
+}
+.xh-chart-left-each ul li:last-child a{
+	border-left: none;
+}
+.xh-chart-left-each ul li a:hover{
+	text-decoration: none;
+}
+.xh-chart-left-each ul li a.active{
+	color: #fff;
+	border: 1px solid #459fed;
+	background: #459fed;
+}
+.xh-chart-right-tit{
+	font-size: 24px;
+	margin-bottom: 38px;
+}
+.xh-chart-right-tit-icon{
+	display: inline-block;
+	width: 26px;
+	height: 26px;
+	margin-bottom: -4px;
+}
+.xh-chart-right-tit-icon-1{
+	background: url(../img/tj_icon1.png) no-repeat;
+}
+.xh-chart-right-tit-icon-2{
+	background: url(../img/tj_icon2.png) no-repeat;
+}
+.xh-chart-right-tit-icon-3{
+	background: url(../img/tj_icon3.png) no-repeat;
+}
+.xh-chart-right-tit-icon-4{
+	background: url(../img/tj_icon4.png) no-repeat;
+}
+.xh-chart-right-tab{
+	display: inline-block;
+	margin-bottom: 80px;
+}
+.xh-chart-right-tab li a{
+	display: block;
+	font-size: 18px;
+	color: #666;
+	margin: 0 12px;
+}
+.xh-chart-right-tab li a.active{
+	color: #459fed;
+}
+.xh-chart-right-tab li a:hover{
+	text-decoration: none;
+}
+.xh-chart-ranking ul li{
+	float: left;
+	font-size: 14px;
+	color: #666;
+	height: 30px;
+	line-height: 30px;
+	margin-bottom: 12px;
+}
+.xh-chart-ranking ul li:first-child{
+	width: 102px;
+	text-align: right;
+	margin-right: 24px;
+	overflow: hidden;
+}
+.xh-chart-ranking ul li:nth-child(2){
+	width: 354px;
+}
+.xh-chart-ranking ul li:nth-child(2) span{
+	display: block;
+	background: #459fed;
+	width: 0%;
+	height: 100%;
+}
+.xh-chart-ranking ul li:nth-child(3){
+	width: 112px;
+	text-align: left;
+	margin-left: 56px;
+}
+.xh-chart-ranking ul li:nth-child(4),.xh-chart-ranking ul li:last-child{
+	width: 36px;
+	text-align: center;
+}
+.xh-chart-tit-ipt{
+	width: 150px;
+	height: 34px;
+	border: 1px solid #c9c9c9;
+	margin-right: 34px;
+	padding: 0 36px 0 8px;
+}
+.xh-chart-icon{
+	position: absolute;
+	top: 0;
+	right: 36px;
+	width: 34px;
+	height: 34px;
+	background: url(../img/side_seach.png) center no-repeat;
+	cursor: pointer;
+}
+.xh-cde-list .xh-proportion span{
+	width: 8.5%;
+}
+.xh-cde-list .xh-proportion span:nth-child(2),.xh-cde-list .xh-proportion span:nth-child(3){
+	width: 12.5%;
+}
+.xh-cde-list .xh-proportion span:last-child,.xh-cde-list .xh-proportion span:nth-last-child(3){
+	width: 12%;
+}
+.xh-cde-list .xh-proportion span:first-child{
+	text-align: left;
+	word-break: break-all;
+}
+.xh-sidebar-tad li{
+	width: 50%;
+	text-align: center;
+}
+.xh-sidebar-tad li a{
+	display: inline-block;
+	font-size: 16px;
+	color: #666;
+	height: 36px;
+	line-height: 36px;
+}
+.xh-sidebar-tad li a:hover{
+	text-decoration: none;
+}
+.xh-sidebar-tad li a:hover,.xh-sidebar-tad li a.active{
+	color: #459fed;
+	border-bottom: 3px solid #459fed;
+}
+/*统计图表 end*/
+/*分页*/
+.xh-paging{
+	text-align: center;
+	margin-top: 38px;
+}
+.xh-paging a{
+    display: inline-block;
+    min-width: 48px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    font-size: 18px;
+		vertical-align: middle;
+	/*color: #999;*/
+	margin:0;
+	vertical-align: middle;
+}
+
+.xh-paging .ant-pagination-item-active a {
+	color:#ffffff;
+}
+
+.xh-paging .ant-pagination-jump-prev a {
+	display: inline;
+}
+
+.xh-paging .ant-pagination-item {
+	min-width:48px;
+	min-height: 48px;
+	text-align: center;
+}
+
+.xh-paging .ant-pagination-jump-prev {
+	width:48px;
+	height: 48px;
+	text-align: center;
+	position: relative;
+}
+
+.xh-paging .ant-pagination-jump-next a {
+	display: inline;
+}
+
+.xh-paging .ant-pagination-jump-next {
+	position: relative;
+}
+
+.xh-paging .ant-pagination-prev {
+	min-width:48px;
+	min-height: 48px;
+	text-align: center;
+	a:after {
+		margin-top: 10px;
+	}
+}
+
+.xh-paging .ant-pagination-next {
+	min-width:48px;
+	min-height: 48px;
+	text-align: center;
+	a:after {
+		margin-top: 10px;
+	}
+}
+
+.xh-paging .ant-pagination {
+	text-align: center;
+	display: inline-block;
+	margin: 0 auto;
+}
+
+.ant-pagination-jump-prev:after, .ant-pagination-jump-next:after {
+	margin-top: 10px;
+	position: absolute;
+	left: 50%;
+	top: 0;
+	margin-left: -10px;
+}
+
+.xh-paging a:hover{
+	/*color: #fff;*/
+    /*background: #459fed;*/
+	text-decoration: none;
+	border-radius:0px;
+}
+
+.xh-paging a.xh-paging-active{
+	color: #fff;
+    background: #459fed;
+}
+
+.xh-paging .xh-paging-next{
+	background: url(../img/paging_n.png) center no-repeat;
+}
+
+.xh-paging .xh-paging-next:hover{
+	background: #459fed url(../img/paging_s.png) center no-repeat;
+}
+
+
+
+/*市场销售 - 样本医院 start*/
+.xh-screen-pick-wrap{
+	height: 34px;
+	line-height: 34px;
+	font-size: 14px;
+	color: #666;
+}
+.xh-screen-pick-wrap dd{
+	padding: 0 6px;
+}
+.xh-screen-pick-wrap dd a{
+	color: #666;
+	padding: 0 14px;
+}
+.xh-screen-pick-wrap dd a:hover,.xh-screen-pick-wrap dd a.active{
+	display:block;
+	color: #fff;
+	background: #459fed;
+	border-radius: 5px;
+	text-decoration: none;
+}
+.xh-year-pic{
+	display:inline-block;
+	width: 20px;
+	height: 19px;
+	background: url(../img/tj_icon.png) no-repeat;
+	margin-bottom: -3px;
+}
+.xh-sample-hospital .xh-proportion span:first-child{
+	width: 30%;
+	text-align: left;
+}
+.xh-sample-hospital .xh-proportion span:nth-child(2){
+	width: 40%;
+	text-align: left;
+}
+.xh-sample-hospital .xh-proportion span:nth-last-child(-n+3){
+	width: 10%;
+}
+.xh-screen-xz{
+	font-size: 16px;
+	color: #666;
+	line-height: 34px;
+}
+.xh-year-table-pic{
+	width: 800px;
+	top: 38px;
+	left: -744px;
+	padding: 66px 0;
+}
+.xh-year-table-pic:after{
+	left: 744px;
+}
+.xh-global-clinical-list .xh-proportion span,.xh-global-clinical-drugs .xh-proportion ul.xh-proportion-open li span{
+	width: 10%;
+}
+.xh-global-clinical-list .xh-proportion span:first-child,.xh-global-clinical-drugs .xh-proportion ul.xh-proportion-open li span:first-child{
+	width: 40%;
+	text-align: left;
+}
+.xh-global-clinical-list .xh-proportion span:nth-child(2),.xh-global-clinical-drugs .xh-proportion ul.xh-proportion-open li span:nth-child(2){
+	width: 30%;
+	text-align: left;
+}
+/*市场销售 - 样本医院 end*/
+/*临床试验 start*/
+.xh-sidebar-data-tit{
+	color: #666;
+	font-size: 16px;
+	margin-bottom: 4px;
+}
+.xh-sidebar-data-ipt input{
+	width: 136px;
+	height: 30px;
+	border: 1px solid #c9c9c9;
+	padding: 0 28px 0 6px;
+}
+.xh-sidebar-data-ipt i{
+	position: absolute;
+	top: 5px;
+	left: 108px;
+	width: 20px;
+	height: 20px;
+	background: url(../img/data_icon.png) no-repeat;
+	cursor: pointer;
+}
+.xh-global-clinical-drugs .xh-proportion span{
+	width: 10%;
+}
+.xh-global-clinical-drugs .xh-proportion span:first-child{
+	width: 60%;
+	text-align: left;
+}
+.xh-global-clinical-drugs .xh-proportion span:nth-child(4):after{
+	bottom: -21px !important;
+}
+/*临床试验 end*/
+/*修改列表超链接 start*/
+.xh-list-row-a{
+	display:table;
+	width:100%;
+	color: #666;
+	padding: 16px 0;
+	min-height: 84px;
+}
+.xh-list-row-a:hover{
+	background: #f9f9f9;
+}
+.xh-register-enterprise-w{
+	margin: 6px 0;
+}
+.xh-register-enterprise-w span{
+	width: 20%;
+}
+.xh-register-enterprise-w a{
+	display:inline-block;
+	width: 80%;
+	color: #666;
+}
+
+.xh-register-enterprise-w a span{
+	width: 25% !important;
+}
+.xh-register-enterprise-w a span:first-child{
+	text-align: center !important;
+}
+.xh-register-enterprise-w a:hover{
+	background: #f9f9f9;
+}
+.xh-not-subscribed a{
+	color: #666;
+}
+/*修改列表超链接 end*/
+/*文章部分 start*/
+.xh-article{
+	width: 980px;
+	height: 800px;
+	margin: 0 auto;
+}
+.xh-article h2{
+	font-size: 24px;
+	padding: 36px 0 18px;
+}
+.xh-article-source span{
+	font-size: 18px;
+	color: #999;
+	margin-right: 20px;
+}
+.xh-article p{
+	font-size: 16px;
+	color: #333;
+	line-height: 38px;
+	margin: 32px 0;
+}
+/*文章部分 end*/
+/*中国临床试验 start*/
+.xh-china-clinical-list .xh-proportion span{
+	width: 22.5%;
+}
+.xh-china-clinical-list .xh-proportion span:first-child{
+	width: 40%;
+	text-align: left;
+}
+.xh-china-clinical-list .xh-proportion span:last-child{
+	width: 15%;
+}
+.xh-proportion-dl-w dl dt,.xh-proportion-dl-w dl dd{
+	float: left;
+	font-size: 14px;
+	color: #b6b6b6;
+}
+.xh-proportion-dl-w dl dd{
+	margin-right: 22px;
+}
+.xh-proportion-open-china-drugs li span{
+	width: 10% !important;
+}
+.xh-proportion-open-china-drugs li span:first-child,.xh-proportion-open-china-drugs li span:nth-child(3){
+	width: 30% !important;
+}
+.xh-proportion-open-china-drugs li span:nth-child(2){
+	width: 20% !important;
+	text-align: center !important;
+}
+/*中国临床试验 end*/
+/*说明书 start*/
+.xh-instructions-list .xh-proportion span{
+	width: 21.666%;
+}
+.xh-instructions-list .xh-proportion span:first-child{
+	text-align: left;
+}
+.xh-instructions-list .xh-proportion span:nth-child(2),.xh-instructions-list .xh-proportion span:last-child{
+	width: 10%;
+}
+.xh-instructions-list .xh-proportion span:nth-child(4){
+	width: 15%;
+}
+/*说明书 end*/
+/*药品中标 start*/
+.xh-drug-bidding .xh-proportion span{
+	width: 10%;
+}
+.xh-drug-bidding .xh-proportion span:first-child{
+	width: 20%;
+}
+.xh-drug-bidding .xh-proportion span:nth-child(-n+3){
+	text-align: left;
+}
+.xh-details-btn{
+	display: inline-block;
+	height: 34px;
+	line-height: 34px;
+	border: 1px solid #c9c9c9;
+	border-radius: 2px;
+	padding:0 12px;;
+	font-size: 14px;
+	color: #666
+}
+.xh-details-btn:hover,.xh-details-btn.active{
+	background: #459fed;
+	color: #fff;
+	border: 1px solid #459fed;
+	text-decoration: none;
+}
+.xh-result-details{
+	text-align: left;
+	width: 600px;
+	left: -510px;
+}
+.xh-result-details:after{
+	left: 546px;
+}
+.xh-result-details dl{
+	margin-top: 12px;
+}
+.xh-result-details dl dt{
+	color: #999;
+	min-width: 98px;
+	text-align: right;
+}
+.xh-result-details dl dt,.xh-result-details dl dd{
+	float: left;
+}
+.xh-details-key-li-bomb-box-close,.xh-details-key-li-bomb-box-close-1{
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	top: 12px;
+	background: url(../img/bomb-box-close.png) no-repeat;
+}
+.xh-details-key-li-bomb-box-close{
+	left: 12px;
+}
+.xh-details-key-li-bomb-box-close-1{
+	right: 12px;
+}
+.xh-number{
+	height: 34px;
+	line-height: 34px;
+	padding: 0 12px;
+	background: #459fed;
+	color: #fff;
+	border-radius: 2px;
+}
+.xh-data-comparison .xh-proportion span{
+	text-align: left !important;
+	width: 10%;
+	padding: 8px 0 !important;
+}
+.xh-data-comparison .xh-proportion span:not(:first-child){
+	width: 18%;
+	padding-left: 5% !important;
+}
+.xh-data-comparison .xh-proportion span:first-child{
+	border-right: 1px solid #e8e9eb;
+}
+.xh-xh-data-comparison-del{
+	border-bottom: 1px solid #e8e9eb;
+	padding: 12px 0 6px;
+}
+.xh-xh-data-comparison-del span{
+	display: inline-block;
+	border-right: none !important;
+}
+.xh-data-comparison .xh-proportion div:first-child span{
+	padding-top: 22px !important;
+}
+.xh-data-comparison .xh-proportion div:last-child span{
+	padding-bottom: 22px !important;
+}
+.xh-data-comparison .xh-proportion span a{
+	position: relative;
+}
+.xh-data-comparison .xh-proportion span a.xh-top:after{
+	content: '';
+	position: absolute;
+	top: -14px;
+	left: 0;
+	width: 38px;
+	height: 17px;
+	background: url(../img/top.png) no-repeat;
+}
+.xh-data-comparison .xh-proportion span a.xh-bottom:after{
+	content: '';
+	position: absolute;
+	top: -14px;
+	left: 0;
+	width: 38px;
+	height: 17px;
+	background: url(../img/bottom.png) no-repeat;
+}
+.xh-other a{
+	position: relative;
+	display: inline-block;
+	padding-left: 16px;
+}
+.xh-other.on:after{
+	content: '';
+	position: absolute;
+	top: 33px;
+	left: 0;
+	width: 9px;
+	height: 5px;
+	background: url(../img/select_s.png) no-repeat;
+}
+.xh-other a:hover{
+	text-decoration: none;
+}
+/*药品中标 end*/
+/*医保目标 start*/
+.xh-medical-insurance-list .xh-proportion span{
+	width: 10%;
+}
+.xh-medical-insurance-list .xh-proportion span:first-child{
+	text-align: left;
+}
+.xh-medical-insurance-list .xh-proportion span:nth-child(3),.xh-medical-insurance-list .xh-proportion span:nth-child(4),.xh-medical-insurance-list .xh-proportion span:nth-child(5){
+	width: 16.666%;
+}
+.xh-ball-details{
+	width: 866px;
+	left: -768px;
+	padding: 36px 56px;
+}
+.xh-ball-details:after{
+	left: 804px;
+}
+.xh-ball-details .xh-ball-tit{
+	font-size: 18px;
+	color: #666;
+	border-bottom: 1px solid #f1f1f1;
+	padding: 8px 0;
+}
+.xh-ball-details dl:nth-last-of-type(1){
+	margin-bottom: 14px;
+}
+.xh-ball-a{
+	display: inline-block;
+	margin: 20px 30px 0 0;
+	font-size: 14px;
+}
+/*医保目标 end*/
+/*国内企业 start*/
+.xh-business-details-list .xh-proportion span{
+	width: 15%;
+}
+.xh-business-details-list .xh-proportion span:first-child{
+	text-align: left;
+}
+.xh-business-details-list .xh-proportion span:nth-child(-n+3){
+	width: 23.333%;
+}
+/*国内企业 end*/
+/*保存筛选 start*/
+.xh-screen-track-wrap{
+	position: relative;
+	width: 600px;
+	height: 384px;
+	background: #fff;
+	box-shadow: 0 1px 6px rgba(0,0,0,.3);
+	padding: 66px 46px;
+	font-size: 16px;
+	color: #666;
+}
+.xh-screen-track-wrap-1{
+	padding:46px;
+}
+.xh-screen-track-wrap-2{
+	padding: 64px 46px;
+}
+.xh-scteen-name{
+	margin-bottom: 36px;
+}
+.xh-scteen-name span{
+	font-size: 18px;
+	height: 36px;
+	line-height: 36px;
+}
+.xh-scteen-name input{
+	width: 198px;
+	height: 36px;
+	line-height: 36px;
+	padding-left: 8px;
+	border: 1px solid #c9c9c9;
+	border-radius: 2px;
+	color: #666;
+}
+.xh-scteen-name a{
+	display: inline-block;
+	width: 100px;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	border-radius: 2px;
+	background: #459fed;
+	color: #fff;
+	margin-left: 8px;
+}
+.xh-scteen-name a:hover{
+	background: #2b8bde;
+	text-decoration: none;
+}
+.xh-scteen-term p,.xh-scteen-term ul li{
+	margin-bottom: 18px;
+}
+.xh-screen-track-wrap h4{
+	font-size: 24px;
+	color: #000;
+	margin-bottom: 24px;
+}
+.xh-pop-track-checkbox{
+	margin-bottom: 24px;
+}
+.xh-pop-track-checkbox span{
+	color: #b6b6b6;
+	padding-left: 16px;
+}
+.xh-pop-btn{
+	display: inline-block;
+	width: 100px;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	color: #fff;
+	background: #459fed;
+	border-radius: 2px;
+}
+.xh-pop-btn:hover{
+	text-decoration: none;
+	background: #2b8bde;
+}
+/*保存筛选 end*/
+/*个人中心 start*/
+.xh-personal-center{
+	width: 100%;
+	height: 320px;
+	background: url(../img/personal_bg.png) center no-repeat;
+	background-size: cover;
+}
+.xh-personal-center-inner{
+	padding-top: 60px;
+}
+.xh-personal-center-inner ul li{
+	font-size: 18px;
+	color: #fff;
+	margin-bottom: 10px;
+}
+.xh-personal-center-screen{
+	padding: 38px 0;
+}
+.xh-personal-center-screen-2{
+	padding-top: 0;
+}
+.xh-personal-center-screen ul li a{
+	font-size: 16px;
+	color: #666;
+	margin-right: 42px;
+}
+.xh-personal-center-screen ul li a:hover,.xh-personal-center-screen ul li a.active{
+	color: #459fed;
+	text-decoration: none;
+}
+.xh-personal-center-list .xh-proportion span{
+	width: 16%;
+}
+.xh-personal-center-list-1 .xh-proportion span{
+	width: 29.333%;
+}
+
+.xh-personal-center-list-1 .xh-proportion span:nth-child(-n+3){
+	text-align: left;
+}
+.xh-personal-center-list .xh-proportion span:first-child{
+	width: 40%;
+	text-align: center;
+}
+.xh-personal-center-list .xh-proportion span:last-child,.xh-personal-center-list-1 .xh-proportion span:last-child{
+	width: 12%;
+}
+.xh-personal-center-list-2 .xh-proportion span{
+	width: 12%;
+}
+.xh-personal-center-list-2 .xh-proportion span:first-child{
+	width: 88%;
+	text-align: left;
+}
+.xh-personal-center-ul li{
+	margin-bottom: 32px;
+}
+.xh-personal-center-ul li span{
+	margin-right: 26px;
+}
+.xh-personal-center-ul li,.xh-personal-center-ul li a{
+	height: 26px;
+	line-height: 26px;
+	font-size: 16px;
+	color: #666;
+}
+.xh-personal-center-ul li a:hover{
+	text-decoration: none;
+}
+
+.xh-toggle{
+	display: inline-block;
+	width: 51px;
+	height: 26px;
+	vertical-align: middle;
+	margin: 0 2px 3px 0;
+}
+
+.xh-toggle-off{
+	background: url(../img/toggle-off.png) no-repeat;
+}
+.xh-toggle-on{
+	background: url(../img/toggle-on.png) no-repeat;
+}
+.xh-mw-a{
+	min-width: 82px;
+}
+.mw{
+	min-width: 112px;
+}
+.xh-binding-btn{
+	display: inline-block;
+	height: 34px;
+	line-height: 34px;
+	color: #666 !important;
+}
+.xh-binding-btn:hover{
+	text-decoration: none !important;
+}
+.xh-binding-eject{
+	position: absolute;
+	top: 0;
+	left: 148px;
+	width: 310px;
+	height: 284px;
+	text-align: center;
+	background: #fff;
+	box-shadow: 0 1px 6px rgba(0,0,0,.3);
+	padding: 58px 0;
+}
+.xh-binding-eject p{
+	margin-top: 20px;
+}
+.xh-keep-btn{
+	display: inline-block;
+	width: 100px;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	background: #459fed;
+	border-radius: 2px;
+	font-size: 16px;
+	color: #fff;
+	margin-top: 48px;
+}
+.xh-keep-btn:hover{
+	text-decoration: none;
+	background: #2b8bde;
+}
+.xh-binding-eject-1{
+	position: absolute;
+	top: 116%;
+	left: 238px;
+	background: #fff;
+	width: 600px;
+	height: 444px;
+	box-shadow: 0 1px 6px rgba(0,0,0,.3);
+	padding: 44px 60px;
+	font-size: 16px;
+	color: #666;
+	text-align: center;
+}
+.xh-binding-eject-1 p{
+	color: #333;
+}
+.xh-pay-pop dl dt,.xh-pay-pop dl dd{
+	float: left;
+	height: 36px;
+	line-height: 36px;
+	text-align: left;
+}
+.xh-pay-pop dl{
+	margin-bottom: 10px;
+}
+.xh-pay-pop-btn{
+	display: inline-block;
+	height: 36px;
+	line-height: 36px;
+	padding: 0 12px;
+	color: #666;
+	border-radius: 2px;
+	margin-right: 2px;
+}
+.xh-pay-pop-btn:hover,.xh-pay-pop-btn.active{
+	text-decoration: none;
+	background: #459fed;
+	color: #fff;
+}
+/*个人中心 end*/
+/*用户注册 start*/
+.xh-login-absolute{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-o-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}
+.xh-login-box{
+	position: relative;
+	width: 600px;
+	height: 384px;
+	box-shadow: 0 1px 6px rgba(0,0,0,.3);
+	background: #fff;
+	padding: 20px 28px;
+	font-size: 16px;
+	color: #666;
+	overflow: hidden;
+}
+.xh-login-box h2{
+	font-size: 16px;
+	margin-bottom: 52px;
+}
+.xh-wechat-code{
+	text-align: center;
+}
+.xh-wechat-code p:nth-of-type(1){
+	font-size: 18px;
+	margin-bottom: 30px;
+}
+.xh-login-box-close{
+	position: absolute;
+	top: 12px;
+	right: 12px;
+	width: 12px;
+	height: 12px;
+	background: url(../img/login_box_close.png) no-repeat;
+}
+.xh-login-box-mode{
+	position: absolute;
+	top: -90px;
+	right: -90px;
+	width: 180px;
+	height: 180px;
+	background: #459fed;
+	-o-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.xh-login-box-mode p{
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+	margin-top: 146px
+}
+.xh-login-phone{
+	color: #999;
+}
+.xh-phone-form{
+	width: 360px;
+	margin: 0 auto;
+}
+.xh-login-phone{
+	padding-top: 98px;
+}
+.xh-phone-form-each{
+	width: 360px;
+	height: 42px;
+	line-height: 42px;
+	border-bottom: 1px solid #f0f0f0;
+}
+.xh-phone-form-each input{
+	width: 190px;
+	height: 34px;
+	line-height: 34px;
+	padding-left: 8px;
+	border: none;
+	color: #666;
+}
+.xh-phone-form-each a{
+	display: inline-block;
+	height: 34px;
+	line-height: 34px;
+	font-size: 14px;
+	color: #666;
+	padding: 0 12px;
+	border: 1px solid #c9c9c9;
+	border-radius: 2px;
+}
+.xh-phone-form-each a:hover{
+	text-decoration: none;
+	background: #459fed;
+	border: 1px solid #459fed;
+	color: #fff;
+}
+.xh-phone-form-btn{
+	text-align: center;
+	margin-top: 56px;
+}
+.xh-phone-form-btn a{
+	display: inline-block;
+	width: 280px;
+	height: 46px;
+	line-height: 46px;
+	text-align: center;
+	color: #fff;
+	background: #459fed;
+	border-radius: 2px;
+}
+.xh-phone-form-btn a:hover{
+	text-decoration: none;
+	background: #2b8bde;
+}
+/*用户注册 end*/
+/*分页*/
+.xh-paging{
+	text-align: center;
+	margin-top: 38px;
+	margin-bottom: 38px;
+}
+.xh-paging a{
+	display: inline-block;
+	min-width: 48px;
+	height: 48px;
+	line-height: 48px;
+	text-align: center;
+	font-size: 18px;
+	color: #999;
+	padding: 0 12px;
+}
+.xh-paging a:hover{
+	color: #fff;
+	background: #459fed;
+}
+.xh-paging a.xh-paging-active{
+	color: #fff;
+	background: #459fed;
+}
+.xh-paging .xh-paging-next{
+	background: url(../img/paging_n.png) center no-repeat;
+}
+.xh-paging .xh-paging-next:hover{
+	background: #459fed url(../img/paging_s.png) center no-repeat;
+}
+
+
+/*改写ant-design样式*/
+
+.ant-table-thead tr th {
+	background: none;
+	font-size: 16px;
+	color: #b6b6b6;
+	border-bottom: 1px solid #e8e9eb;
+	padding: 0 8px 12px 8px;
+	font-weight:normal;
+	text-align: left;
+}
+
+.ant-table-tbody tr {
+	border-bottom: 1px solid #e8e9eb;
+}
+
+.ant-table-tbody tr td {
+	color: #666;
+	padding: 16px 8px;
+	text-align: left;
+	font-size: 16px;
+}
+
+.xh-container-drug-details {
+	padding-top:1
+}
+
+.ant-pagination-item{
+	border-radius: 0px;
+	border:none;
+}
+
+.ant-pagination-prev, .ant-pagination-next {
+	border:none;
+}
+
+:root .ant-pagination-prev a:after, :root .ant-pagination-next a:after {
+	font-size:28px;
+}
+
+.ant-pagination-item:hover {
+	border-radius: 0px;
+}
+
+.xh-pt-36 {
+	padding-top:36px;
+}

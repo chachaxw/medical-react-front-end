@@ -1,0 +1,36 @@
+.drugsContent {
+
+    .xh-details-key-li-bomb-box i {
+        position: static;
+        top: 8px;
+        right: 8px;
+        width: 12px;
+        height: 12px;
+        background: none;
+        cursor: pointer;
+    }
+
+.xh-container-drug-details .xh-details-show-each .xh-details-key .xh-bid-data-table {
+
+        tr {
+            th {
+                text-align: center;
+            }
+        }
+
+
+        td {
+            text-align: center;
+        }
+    }
+
+.mt-ls {
+    margin-top:20px;
+}
+}
+
+.xh-details-key {
+    ul {
+        width:650px;
+    }
+}

@@ -1,0 +1,20 @@
+.xh-sidebar-query-selects {
+
+    .ant-form-item {
+        margin-bottom:0;
+    }
+
+    .mar-left {
+        margin-left:20px;
+    }
+}
+
+.xh-sidebar-checkbox-wrap {
+    .morels {
+        margin-top:-20px;
+        margin-left:15px;
+        font-size:14px;
+        color: #459fed;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,10 @@
+{
+  "presets": ["es2015","es2016", "react", "stage-0"],
+  "plugins":[
+//    "dva-hmr",
+    "transform-decorators-legacy",
+    //"transform-remove-console",
+    "babel-plugin-add-module-exports",
+    "transform-runtime",
+    ["babel-plugin-import",{"libraryName": "antd","style": true}]]
+}

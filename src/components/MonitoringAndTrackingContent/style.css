@@ -1,0 +1,21 @@
+.MonitoringAndTrackingContent {
+    .xh-container-right {
+        padding:0;
+    }
+
+    .xh-proportion {
+        cursor: pointer;
+    }
+
+    .xh-time-wrap {
+        overflow: hidden;
+    }
+
+    .xh-container-right-wrap {
+        overflow: hidden;
+    }
+
+    .xh-proportion {
+        padding:20px 0;
+    }
+}

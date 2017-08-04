@@ -1,0 +1,67 @@
+.LeftNavContent {
+    position:absolute;
+    left:0;
+    top:0;
+    padding-top:78px;
+    min-height:100%;
+    transition:left .5s;
+    transform: translateZ(0);
+    z-index:9;
+    width:220px;
+    background: #fff;
+    .xh-container-left{
+        width: 220px;
+    }
+
+    .xh-sidebar-top {
+        text-align:right;
+    }
+
+    /*修改ant-design的样式*/
+    .ant-tabs-nav .ant-tabs-tab {
+        padding:10px;
+        margin: 0 10px;
+        font-size: 16px;
+    }
+
+    .ant-tabs-nav {
+        width:100%;
+        text-align: center;
+    }
+
+    .xh-sidebar-drug-details {
+        a:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.rightcontent {
+    transition: padding .5s;
+    transform: translateZ(0);
+}
+
+.toshownav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-top: 78px;
+    height: 100%;
+    transition: left .5s;
+    transform: translateZ(0);
+    z-index: 6;
+    width: 30px;
+    border-right: 1px solid #f5f6f6;
+}
+
+.wrapdiv {
+    width:30px;
+    text-align:center;
+    cursor:pointer;
+    img {
+        width:20px;
+        height:20px;
+        margin-top:31px;
+    }
+}
+

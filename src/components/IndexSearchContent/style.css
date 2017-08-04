@@ -1,0 +1,20 @@
+.IndexSearchContent {
+    width:100%;
+
+    .xh-proportion {
+        cursor: pointer;
+    }
+
+    .ant-table-body {
+
+        th {
+            text-align: left;
+        }
+
+        td {
+            text-align:left;
+        }
+
+    }
+
+}

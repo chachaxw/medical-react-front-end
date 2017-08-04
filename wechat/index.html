@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title></title>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+
+    <script type="text/javascript">
+        function callback(result) {
+            alert('cucess');
+            alert(result);  //输出openid
+        }
+
+        function getQueryString(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) return unescape(r[2]); return null;
+        }
+        var code = getQueryString("code");
+
+        $.ajax({
+            async: false,
+            url: "http://www.shejingbingis.me/login.php", //服务端处理文件php的
+            type: "GET",       //下面几行是jsoup，如果去掉下面几行的注释，后端对应的返回结果也要去掉注释
+            // dataType: 'jsonp',
+            // jsonp: 'callback', //jsonp的值自定义,如果使用jsoncallback,那么服务器端,要返回一个jsoncallback的值对应的对象.
+            // jsonpCallback:'callback',
+            data: {code:code}, //传递本页面获取的code到后台，以便后台获取openid
+            timeout: 5000,
+            success: function (result) {
+                callback(result);
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                alert(textStatus);
+            }
+        });
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+.SelfcenterContent {
+    /*侧边栏*/
+    .xh-container-left{
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 220px;
+    }
+
+    .xh-content-list-cont li {
+        padding: 16px 0;
+    }
+
+    .xh-mt-24 {
+        margin-top:24px;
+    }
+
+    .xh-text-center {
+        img {
+            width:106px;
+            height:106px;
+            border-radius:100%;
+        }
+    }
+}

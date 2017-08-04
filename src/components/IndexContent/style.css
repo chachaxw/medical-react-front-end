@@ -1,0 +1,141 @@
+.IndexContent {
+    width:100%;
+
+    .xh-index-key-search{
+        margin-top: 32px;
+    }
+    .xh-index-key-search,.xh-index-key-search h6,.xh-index-key-search a{
+        font-size: 14px;
+        color: #999;
+        line-height: 26px;
+    }
+    .xh-index-key-search a:hover{
+        text-decoration: underline;
+    }
+    .xh-index-key-search a:after{
+        position: absolute;
+        top: 8px;
+        left: 32px;
+        content: '';
+        width: 9px;
+        height: 5px;
+        background: url(../../public/img/select.png) no-repeat;
+    }
+    .xh-index-key-search .xh-index-key-w{
+        width: 568px;
+    }
+    .xh-index-key-search .xh-index-key-w span{
+        padding-right: 24px;
+    }
+
+    .xh-index-search-wrap {
+        position:relative;
+        width: 732px;
+        height:500px;
+        margin:0 auto;
+    }
+
+    .xh-index-search{
+        position:absolute;
+        left:0;
+        top:50%;
+        width:100%;
+        height: 130px;
+        margin-top:-65px;
+    }
+
+    .xh-index-search .xh-index-search-box{
+        width: 564px;
+        height: 42px;
+        font-size: 14px;
+        color: #666;
+        border: 1px solid #e8e9eb;
+        border-right: none;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        padding-left: 12px;
+    }
+    .xh-index-search .xh-index-search-btn{
+        width: 76px;
+        height: 42px;
+        font-size: 14px;
+        color: #fff;
+        border: none;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        cursor: pointer;
+        background: #459fed;
+    }
+    .xh-index-search .xh-index-search-btn:hover{
+        background: #409ae8;
+    }
+    .xh-index-search a.xh-index-search-screen{
+        height: 44px;
+        line-height: 44px;
+        font-size: 14px;
+        color: #666;
+        margin-left: 18px;
+    }
+    .xh-index-search a.xh-index-search-screen:hover{
+        text-decoration: underline;
+    }
+
+    /*首页轮播*/
+    .xh-carousel-wrap{
+        width: 1140px;
+        height: 580px;
+        margin: 0 auto;
+    }
+    .xh-carousel-wrap .xh-carousel-cont{
+        overflow: hidden;
+    }
+    .xh-carousel-wrap .xh-carousel-cont,.xh-carousel-wrap .xh-carousel-cont .xh-carousel-each{
+        height: 492px;
+    }
+    .xh-carousel-wrap .xh-carousel-cont .xh-carousel-each .xh-carousel-text,.xh-carousel-wrap .xh-carousel-cont .xh-carousel-each .xh-carousel-img{
+        width: 50%;
+    }
+    .xh-carousel-wrap .xh-carousel-cont .xh-carousel-each .xh-carousel-img{
+        margin-top: 52px;
+        text-align: right;
+    }
+    .xh-carousel-wrap .xh-carousel-cont .xh-carousel-each .xh-carousel-text{
+        padding-right: 152px;
+        margin-top: 162px;
+    }
+    .xh-carousel-wrap .xh-carousel-cont .xh-carousel-each .xh-carousel-text h2{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .xh-carousel-wrap .xh-carousel-cont .xh-carousel-each .xh-carousel-text p{
+        font-size: 16px;
+        color: #333;
+        text-align: justify;
+        line-height: 38px;
+    }
+    .xh-carousel-wrap .xh-carousel-cont .xh-carousel-each .xh-carousel-text p a{
+        color: #459fed;
+        margin-left: 172px;
+    }
+    .xh-carousel-wrap .xh-carousel-cont .xh-carousel-each .xh-carousel-text p a:hover{
+        text-decoration: underline;
+    }
+    /*轮播按钮*/
+    .xh-carousel-wrap .xh-carousel-btns{
+        position: absolute;
+        left: 538px;
+        bottom: 12px;
+    }
+    .xh-carousel-wrap .xh-carousel-btns span{
+        display: inline-block;
+        width: 9px;
+        height: 9px;
+        background: #b0b0b0;
+        border-radius: 50%;
+        margin: 0 2px;
+    }
+    .xh-carousel-wrap .xh-carousel-btns span.on{
+        background: #459fed;
+    }
+
+}
